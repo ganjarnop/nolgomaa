@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/pexels-kaip-996329.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    background-color: #0050b3;
+}
+
+.navbar {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar-logo h1 {
+    color: #fff;
+    font-size: 27px;
+}
+
+.navbar-cen {
+    display: flex;
+    column-gap: 25px;
+}
+
+.navbar-cen li {
+    list-style-type: none;
+}
+
+.navbar-cen li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px 10px 15px;
+}
+
+.navbar-cen li a:hover {
+    background-color: #0050b3;
+    transition: all 0.4s ease;
+}
+
+.navbar-cen li .active {
+    background-color: #0050b3;
+}
+
+.navbar .container .fa-cart-shopping {
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+.navbar .container .fa-cart-shopping:hover {
+    color: #053e84;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.box-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    padding: 2.8rem 20%;
+}
+
+.box h1 {
+    color: #fff;
+    font-size: 3.2vw;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+
+.box p {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.box button {
+    color: #fff;
+    background-color: #0050b3;
+    width: 130px;
+    height: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.1vw;
+}
+
+.box button:hover {
+    background-color: #093c7a;
+    transition: 0.3s linear;
+}
+
+.boxx img {
+    width: 100%;
+}
+/* Navbar End */
+
+/* Service */
+.box-serv {
+    display: flex;
+    text-wrap: wrap;
+    min-height: 30vh;
+    align-items: center;
+    row-gap: 50px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    background-color: #222;
+    border-radius: 3px;
+}
+
+.boxs i {
+    font-size: 3vw;
+    color: #0050b3;
+}
+
+.boxs h4 {
+    margin-top: 1vw;
+    color: #fff;
+    font-size: 1.3vw;
+}
+
+.boxs p {
+    margin-top: 1vw;
+    color: #fff;
+}
+/* Service End */
+
+/* Outfit */
+.outfit {
+    padding: 50px 0 50px 0;
+    background-color: #fff;
+}
+
+.box-outfit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 5px;
+    row-gap: 70px;
+}
+
+.boxfit {
+    text-align: center;
+}
+
+.boxfit img {
+    width: 70%;
+    border-radius: 5px
+}
+
+.boxfit h3 {
+    font-size: 1.5vw;
+    margin-top: 1.4rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.boxfit h5 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5vw;
+    color: tomato;
+    margin-bottom: 1.3rem;
+    font-style: italic;
+}
+
+.boxfit button {
+    background-color: #0050b3;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    font-size: 1.2vw;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.boxfit button:hover {
+    background-color: #053e84;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.boxfit .fa-cart-plus {
+    margin-left: 0.5vw;
+}
+/* Outfit End */
+
+/* Daftar */
+.daftar {
+    padding: 30px 0 70px 0;
+    background-color: #222;
+}
+
+.boxtar {
+    color: #fff;
+    text-align: center;
+}
+
+.boxtar h1 {
+    margin-bottom: 45px;
+    font-size: 2.2vw;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.boxtar  h3 {
+    margin-bottom: 40px;
+    font-size: 1.7vw;
+    font-weight: 500;
+    animation: animasi 2s infinite;
+}
+
+@keyframes animasi {
+    0%{
+            transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+.boxtar button {
+    border: none;
+    min-width: 100px;
+    min-height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #0050b3;;
+}
+
+.boxtar button:hover {
+    background-color: #053e84;
+    transition: all 0.3s ease;
+}
+
+.boxtar button i {
+    margin-inline: 5px;
+    font-size: 13px;
+    font-weight: 800;
+    padding-inline: 15px;
+}
+/* Daftar End */
+
+/* Footer */
+.footer {
+    background-color: #0050b3;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 2.7;
+    margin-top: 0;
+}
+
+.footer .link a {
+    color: #fff;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+
+.footer .link a:hover {
+    color: #010101;
+    transition: all 0.3s ease;
+}
+
+.credit p a {
+    font-size: 1vw;
+}
+/* Footer End */
+
+/* Media Queris */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+
+    .navbar-cen li a {
+        font-size: 14.5px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .navbar-logo h1 {
+        font-size: 33px;
+    }
+
+    .navbar-cen {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #0050b3;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar-cen.active {
+        right: 0;
+        display: block;
+        line-height: 4.5;
+    }
+
+    .navbar-cen li a {
+        color: #fff;
+        margin: 2rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar-cen li a:hover {
+        color: #010101;
+        transition: linear 0.3s;
+    }
+
+    .navbar .container .fa-cart-shopping {
+        font-size: 2.6vw;
+        margin-left: 17em;
+    }
+
+    .menu-bar {
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .menu-bar:hover {
+        color: #0050b3;
+        transition: linear 0.3s;
+    }
+
+    .box-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .box {
+        order: 2;
+        text-align: center;
+    }
+
+    .box h1 {
+        font-size: 5.5vw;
+        margin-bottom: 10px;
+    }
+
+    .box p {
+        margin-bottom: 35px;
+        font-size: 3vw;
+        font-weight: 100;
+    }
+
+    .box button {
+        width: 190px;
+        height: 70px;
+        font-size: 22px;
+    }
+
+    .boxx {
+        order: 1;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .boxx img {
+        width: 80vw;
+    }
+
+    .box-serv {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxs i {
+        font-size: 6vw;
+    }
+
+    .boxs h4 {
+        font-size: 2.3vw;
+        margin-top: 1.5rem;
+    }
+
+    .boxs p {
+        font-size: 2vw;
+    }
+
+    .box-outfit {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 5px;
+        row-gap: 60px;
+    }
+    .boxfit h3 {
+        font-size: 2.2vw;
+    }
+
+    .boxfit h5 {
+        font-size: 2.1vw;
+    }
+
+    .boxfit button {
+        font-size: 1.7vw;
+        height: 50px;
+        width: 140px;
+    }
+
+    .boxtar h1 {
+        font-size: 2.5vw;
+        line-height: 1.7;
+    }
+
+    .boxtar h3 {
+        font-size: 2.4vw;
+    }
+
+    .footer .link a {
+        font-size: 1.7vw;
+    }
+
+    .credit p a {
+        font-size: 1.7vw;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar-logo h1 {
+        font-size: 27px;
+    }
+
+    .navbar-cen {
+        width: 23rem;
+    }
+
+    .navbar .container .fa-cart-shopping {
+        margin-left: 4em;
+        font-size: 5vw;
+    }
+
+    .box h1 {
+        margin-bottom: 5px;
+        margin-top: 0rem;
+        font-size: 6vw;
+    }
+
+    .box button {
+        width: 130px;
+        height: 50px;
+        font-size: 1.7rem;
+    }
+
+    .boxs i {
+        font-size: 7.7vw;
+    }
+
+    .boxs h4 {
+        font-size: 3vw;
+    }
+
+    .boxs p {
+        margin-top: 1.3rem;
+        font-size: 2.4vw;
+    }
+
+    .boxfit h3 {
+        font-size: 4.5vw;
+    }
+
+
+    .boxfit h5 {
+        font-size: 4.2vw;
+        margin-top: 1.3rem;
+    }
+
+    .box-outfit {
+        row-gap: 100px;
+    }
+
+    .boxfit button {
+        font-size: 4.1vw;
+        border-radius: 4px;
+        width: 125px;
+        height: 40px;
+    }
+
+    .boxtar h1 {
+        font-size: 3.8vw;
+        margin-bottom: 20px;
+    }
+
+    .boxtar h3 {
+        font-size: 3.2vw;
+        margin-bottom: 20px;
+    }
+
+    .boxtar button i {
+        font-size: 2.5vw;
+    }
+
+    .footer .link a {
+        font-size: 2.3vw;
+    }
+
+    .credit p a {
+        font-size: 2.5vw;
+    }
+}
